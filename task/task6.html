@@ -26,6 +26,9 @@
       input[type="submit"]:hover {
         transform: scale(1.05);
       }
+      fieldset {
+        width: max-content;
+      }
     </style>
   </head>
   <body>
@@ -38,28 +41,31 @@
       type(Salaried and own business)
     </p>
     <form action="https://www.google.com">
-      <div>
-        Select employee type:
-        <label for="salaried"
-          ><input
-            type="radio"
-            name="employee type"
-            id="salaried"
-            value="salaried"
-          />
-          Salaried</label
-        >
+      <fieldset>
+        <legend>Grouped Ratio Buttons</legend>
+        <div>
+          Select employee type:
+          <label for="salaried"
+            ><input
+              type="radio"
+              name="employee type"
+              id="salaried"
+              value="salaried"
+            />
+            Salaried</label
+          >
 
-        <label for="business"
-          ><input
-            type="radio"
-            name="employee type"
-            id="business"
-            value="business"
-          />
-          Business</label
-        >
-      </div>
+          <label for="business"
+            ><input
+              type="radio"
+              name="employee type"
+              id="business"
+              value="business"
+            />
+            Business</label
+          >
+        </div>
+      </fieldset>
       <input type="submit" value="Submit" />
     </form>
   </body>
